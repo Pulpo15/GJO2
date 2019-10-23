@@ -198,7 +198,7 @@ InputManager:
     axis: 0
     joyNum: 2
   - serializedVersion: 3
-    m_Name: J2Shoot
+    m_Name: J3Shoot
     descriptiveName: Joystick 3 shoot
     descriptiveNegativeName: 
     negativeButton: 
