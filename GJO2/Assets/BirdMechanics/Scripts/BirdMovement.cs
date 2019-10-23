@@ -33,7 +33,6 @@ public class BirdMovement : MonoBehaviour
     //}
 
 
-    // Update is called once per frame
     void Update() {
         BasicMovement("J1Horizontal", "J1Vertical", J1RB);
         BasicMovement("J2Horizontal", "J2Vertical", J2RB);
