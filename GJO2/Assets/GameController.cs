@@ -7,21 +7,22 @@ public class GameController : MonoBehaviour
 {
     [Header("UI")]
     public Text roundUI;
+    public Text timerUI;
 
     [Header("Players")]
     public PlayerController[] players;
 
-    //StartButton
-    bool readyToStart;
-    int connectedPlayers;
-    int playersPressingB;
+    [Header("Other")]
+    public float timeBeforeStart;
+    public float timePerRound;
+
+    float timer;
+
+    
+    bool readyToStart = true;
+    [HideInInspector] public int playersPressingB;
     int round = 0;
 
-
-    public void ReadyToStart()
-    {
-        connectedPlayers = Input.GetJoystickNames().Length - 1;
-    }
     public void StartGame()
     {
         for (int i = 0; i < players.Length; i++)
@@ -31,19 +32,32 @@ public class GameController : MonoBehaviour
     }
     private void Update()
     {
-        if (readyToStart && playersPressingB == connectedPlayers)
+        if (readyToStart == false)
         {
-            StartGame();
+
+            timer -= Time.deltaTime;
+            timerUI.text = Mathf.RoundToInt(timer).ToString();
+            if (timer <= 0)
+            {
+                timer = timePerRound;
+                NewRound();
+            }
         }
-        if (Input.GetKeyDown(KeyCode.Space))
+
+        if (Time.time >= timeBeforeStart && readyToStart)
         {
-            round++;
-            SetRound();
+            readyToStart = false;
+        }
+        if(playersPressingB == 5 && readyToStart)
+        {
+            readyToStart = false;
+            StartGame();
         }
     }
 
-    public void SetRound()
+    public void NewRound()
     {
+        round++;
         roundUI.text = "Round: " + round.ToString();
         if(round == 6)
         {
