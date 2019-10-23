@@ -9,9 +9,10 @@ public class Timer : MonoBehaviour
     public float timeScale;
     [HideInInspector]
     public float frameTimeWithScaleTime = 0f;
+    [HideInInspector]
+    public float timeInSecondsShowed = 0f;
 
-    private Text timer;
-    private float timeInSecondsShowed = 0f;
+    private Text timer;    
     private float initialTimeScale;
 
 
@@ -29,7 +30,8 @@ public class Timer : MonoBehaviour
         frameTimeWithScaleTime = Time.deltaTime * timeScale;
 
         timeInSecondsShowed -= frameTimeWithScaleTime;
-        UpdateTimer(timeInSecondsShowed);            
+
+        if (frameTimeWithScaleTime > 0) UpdateTimer(timeInSecondsShowed);
     }
 
     void UpdateTimer(float timeInSeconds)

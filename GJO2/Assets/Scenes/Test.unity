@@ -210,9 +210,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae1b72f826d2d2b45875729266a2e2f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialTime: 120
+  initialTime: 180
   timeScale: 1
   frameTimeWithScaleTime: 0
+  timeInSecondsShowed: 0
 --- !u!1 &1021911371
 GameObject:
   m_ObjectHideFlags: 0
@@ -594,8 +595,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   initialScore: 0
-  scoreInitialCooldown: 10
-  scoreMultiplier: 20
   scoreText: {fileID: 1021911373}
 --- !u!4 &1881831302
 Transform:
