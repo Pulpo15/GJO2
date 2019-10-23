@@ -2,13 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BirdDeath : MonoBehaviour
-{
+public class BirdDeath : MonoBehaviour {
     public bool Dead;
 
     private void OnTriggerEnter(Collider collider) {
-        if (collider.gameObject.name == "J2Bullet(Clone)"){
-            gameObject.active = false;
+        if (collider.gameObject.name == "J1Bullet(Clone)"){
+            gameObject.SetActive(false);
             Dead = true;
         }
     }

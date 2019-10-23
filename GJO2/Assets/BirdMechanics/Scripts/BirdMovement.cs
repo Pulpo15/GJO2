@@ -28,6 +28,8 @@ public class BirdMovement : MonoBehaviour
 
         Player.velocity = new Vector3(HorizontalMovement * speed, Player.velocity.y);
         Player.velocity = new Vector3(Player.velocity.x, VerticalMovement * speed);
+
+        Physics.IgnoreLayerCollision(8,8);
     }
 
     void Update() {

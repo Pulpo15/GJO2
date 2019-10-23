@@ -1,16 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class DeadCheckers : MonoBehaviour
-{
+public class DeadCheckers : MonoBehaviour {
     public BirdDeath BirdJ1;
     public BirdDeath BirdJ2;
     public BirdDeath BirdJ3;
     public BirdDeath BirdJ4;
 
-    void Update()
-    {
+    public Text Sign;
+
+    void Update() {
         int Counter = 0;
 
         if (BirdJ1.Dead) 
@@ -22,15 +23,13 @@ public class DeadCheckers : MonoBehaviour
         if (BirdJ4.Dead)
             Counter++;
 
-
-
         if (Counter == 1)
-            Debug.Log("3 Birds Remaining");
+            Sign.text = "3 Birds Remaining";
         else if (Counter == 2)
-            Debug.Log("2 Birds Remaining");
+            Sign.text = "2 Birds Remaining";
         else if (Counter == 3)
-            Debug.Log("Only 1 Bird Remaining");
+            Sign.text = "Only 1 Bird Remaining";
         else if (Counter == 4)
-            Debug.Log("Thanos was Inevitable");
+            Sign.text = "Thanos was Inevitable";
     }
 }
