@@ -557,8 +557,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   J1RB: {fileID: 1741649510}
   J2RB: {fileID: 646738000}
-  J3RB: {fileID: 0}
-  J4RB: {fileID: 0}
+  J3RB: {fileID: 1942537795}
+  J4RB: {fileID: 10359834}
 --- !u!4 &1000395676
 Transform:
   m_ObjectHideFlags: 0
@@ -653,6 +653,11 @@ PrefabInstance:
     - target: {fileID: 2662332805002293653, guid: 3fc9842e530d49e4b82ba3b61e780972,
         type: 3}
       propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2662332805002293653, guid: 3fc9842e530d49e4b82ba3b61e780972,
+        type: 3}
+      propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -888,7 +893,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 72
+  m_Constraints: 88
   m_CollisionDetection: 0
 --- !u!135 &1741649511
 SphereCollider:
