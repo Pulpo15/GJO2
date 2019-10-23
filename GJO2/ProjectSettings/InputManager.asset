@@ -6,7 +6,7 @@ InputManager:
   serializedVersion: 2
   m_Axes:
   - serializedVersion: 3
-    m_Name: J1Horizontal
+    m_Name: J1HorizontalRotation
     descriptiveName: Joystick 1 horizontal
     descriptiveNegativeName: 
     negativeButton: 
@@ -22,8 +22,8 @@ InputManager:
     axis: 3
     joyNum: 1
   - serializedVersion: 3
-    m_Name: J2Horizontal
-    descriptiveName: Joystick 2 horizontal
+    m_Name: J2HorizontalRotation
+    descriptiveName: Joystick 2 horizontal rotation
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: 
@@ -38,8 +38,8 @@ InputManager:
     axis: 3
     joyNum: 2
   - serializedVersion: 3
-    m_Name: J3Horizontal
-    descriptiveName: Joystick 3 horizontal
+    m_Name: J3HorizontalRotation
+    descriptiveName: Joystick 3 horizontal rotation
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: 
@@ -54,8 +54,8 @@ InputManager:
     axis: 3
     joyNum: 3
   - serializedVersion: 3
-    m_Name: J4Horizontal
-    descriptiveName: Joystick 4 horizontal
+    m_Name: J4HorizontalRotation
+    descriptiveName: Joystick 4 horizontal rotation
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: 
@@ -70,8 +70,8 @@ InputManager:
     axis: 3
     joyNum: 4
   - serializedVersion: 3
-    m_Name: J5Horizontal
-    descriptiveName: Joystick 5 horizontal
+    m_Name: J5HorizontalRotation
+    descriptiveName: Joystick 5 horizontal rotation
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: 
@@ -86,8 +86,8 @@ InputManager:
     axis: 3
     joyNum: 5
   - serializedVersion: 3
-    m_Name: J1Vertical
-    descriptiveName: Joystick 1 vertical
+    m_Name: J1VerticalRotation
+    descriptiveName: Joystick 1 vertical rotation
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: 
@@ -102,8 +102,8 @@ InputManager:
     axis: 4
     joyNum: 1
   - serializedVersion: 3
-    m_Name: J2Vertical
-    descriptiveName: Joystick 2 vertical
+    m_Name: J2VerticalRotation
+    descriptiveName: Joystick 2 vertical rotation
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: 
@@ -118,8 +118,8 @@ InputManager:
     axis: 4
     joyNum: 2
   - serializedVersion: 3
-    m_Name: J3Vertical
-    descriptiveName: Joystick 3 vertical
+    m_Name: J3VerticalRotation
+    descriptiveName: Joystick 3 vertical rotation
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: 
@@ -134,7 +134,7 @@ InputManager:
     axis: 4
     joyNum: 3
   - serializedVersion: 3
-    m_Name: J4Vertical
+    m_Name: J4VerticalRotation
     descriptiveName: Joystick 4 vertical
     descriptiveNegativeName: 
     negativeButton: 
@@ -150,8 +150,8 @@ InputManager:
     axis: 4
     joyNum: 4
   - serializedVersion: 3
-    m_Name: J5Vertical
-    descriptiveName: Joystick 5 vertical
+    m_Name: J5VerticalRotation
+    descriptiveName: Joystick 5 vertical rotation
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: 
@@ -169,8 +169,8 @@ InputManager:
     m_Name: J1Shoot
     descriptiveName: Joystick 1 shoot
     descriptiveNegativeName: 
-    negativeButton: 
-    positiveButton: joystick 1 button 1
+    negativeButton: joystick 1 button 5
+    positiveButton: 
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1000
@@ -186,7 +186,7 @@ InputManager:
     descriptiveName: Joystick 2 shoot
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: joystick 2 button 1
+    positiveButton: joystick 2 button 5
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1000
@@ -198,11 +198,11 @@ InputManager:
     axis: 0
     joyNum: 2
   - serializedVersion: 3
-    m_Name: J2Shoot
+    m_Name: J3Shoot
     descriptiveName: Joystick 3 shoot
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: joystick 3 button 1
+    positiveButton: joystick 3 button 5
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1000
@@ -218,7 +218,7 @@ InputManager:
     descriptiveName: Joystick 4 shoot
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: joystick 4 button 1
+    positiveButton: joystick 4 button 5
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1000
@@ -234,7 +234,7 @@ InputManager:
     descriptiveName: Joystick 5 shoot
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: joystick 5 button 1
+    positiveButton: joystick 5 button 5
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1000
@@ -244,4 +244,164 @@ InputManager:
     invert: 0
     type: 0
     axis: 0
+    joyNum: 5
+  - serializedVersion: 3
+    m_Name: J1Horizontal
+    descriptiveName: Joystick 1 horizontal rotation
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: 
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 0
+    dead: 0.19
+    sensitivity: 1
+    snap: 0
+    invert: 0
+    type: 2
+    axis: 0
+    joyNum: 1
+  - serializedVersion: 3
+    m_Name: J2Horizontal
+    descriptiveName: Joystick 2 horizontal rotation
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: 
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 0
+    dead: 0.19
+    sensitivity: 1
+    snap: 0
+    invert: 0
+    type: 2
+    axis: 0
+    joyNum: 2
+  - serializedVersion: 3
+    m_Name: J3Horizontal
+    descriptiveName: Joystick 3 horizontal rotation
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: 
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 0
+    dead: 0.19
+    sensitivity: 1
+    snap: 0
+    invert: 0
+    type: 2
+    axis: 0
+    joyNum: 3
+  - serializedVersion: 3
+    m_Name: J4Horizontal
+    descriptiveName: Joystick 5 horizontal rotation
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: 
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 0
+    dead: 0.19
+    sensitivity: 1
+    snap: 0
+    invert: 0
+    type: 2
+    axis: 0
+    joyNum: 4
+  - serializedVersion: 3
+    m_Name: J5Horizontal
+    descriptiveName: Joystick 5 horizontal rotation
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: 
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 0
+    dead: 0.19
+    sensitivity: 1
+    snap: 0
+    invert: 0
+    type: 2
+    axis: 0
+    joyNum: 5
+  - serializedVersion: 3
+    m_Name: J1Vertical
+    descriptiveName: Joystick 1 vertical rotation
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: 
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 0
+    dead: 0.19
+    sensitivity: 1
+    snap: 0
+    invert: 1
+    type: 2
+    axis: 1
+    joyNum: 1
+  - serializedVersion: 3
+    m_Name: J2Vertical
+    descriptiveName: Joystick 2 vertical rotation
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: 
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 0
+    dead: 0.19
+    sensitivity: 1
+    snap: 0
+    invert: 1
+    type: 2
+    axis: 1
+    joyNum: 2
+  - serializedVersion: 3
+    m_Name: J3Vertical
+    descriptiveName: Joystick 3 vertical rotation
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: 
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 0
+    dead: 0.19
+    sensitivity: 1
+    snap: 0
+    invert: 1
+    type: 2
+    axis: 1
+    joyNum: 3
+  - serializedVersion: 3
+    m_Name: J4Vertical
+    descriptiveName: Joystick 4 vertical rotation
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: 
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 0
+    dead: 0.19
+    sensitivity: 1
+    snap: 0
+    invert: 1
+    type: 2
+    axis: 1
+    joyNum: 4
+  - serializedVersion: 3
+    m_Name: J5Vertical
+    descriptiveName: Joystick 5 vertical rotation
+    descriptiveNegativeName: 
+    negativeButton: 
+    positiveButton: 
+    altNegativeButton: 
+    altPositiveButton: 
+    gravity: 0
+    dead: 0.19
+    sensitivity: 1
+    snap: 0
+    invert: 1
+    type: 2
+    axis: 1
     joyNum: 5

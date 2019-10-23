@@ -15,11 +15,11 @@ public class BirdMovement : MonoBehaviour
     }
 
     void BasicMovement(string Horizontal, string Vertical, Rigidbody Player) {
-        float x = Input.GetAxis(Horizontal);
-        float y = Input.GetAxis(Vertical);
+        float x = Input.GetAxis(Horizontal + "Rotation");
+        float y = Input.GetAxis(Vertical + "Rotation");
         if (x != 0.0 || y != 0.0) {
             float angle = Mathf.Atan2(y, x) * Mathf.Rad2Deg;
-            Player.rotation = Quaternion.AngleAxis(-90.0f - angle, Vector3.up);
+            Player.rotation = Quaternion.AngleAxis(-90.0f - angle, new Vector3(0,0,-1));
         }
 
         float speed = 3f;
@@ -35,6 +35,5 @@ public class BirdMovement : MonoBehaviour
         BasicMovement("J2Horizontal", "J2Vertical", J2RB);
         BasicMovement("J3Horizontal", "J3Vertical", J3RB);
         BasicMovement("J4Horizontal", "J4Vertical", J4RB);
-
     }
 }
