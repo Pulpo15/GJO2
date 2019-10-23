@@ -34,8 +34,8 @@ public class BirdMovement : MonoBehaviour
 
     void Update() {
         BasicMovement("J1Horizontal", "J1Vertical", J1RB);
-        BasicMovement("J2Horizontal", "J2Vertical", J2RB);
-        BasicMovement("J3Horizontal", "J3Vertical", J3RB);
-        BasicMovement("J4Horizontal", "J4Vertical", J4RB);
+        //BasicMovement("J2Horizontal", "J2Vertical", J2RB);
+        //BasicMovement("J3Horizontal", "J3Vertical", J3RB);
+        //BasicMovement("J4Horizontal", "J4Vertical", J4RB);
     }
 }

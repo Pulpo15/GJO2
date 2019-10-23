@@ -19,7 +19,7 @@ InputManager:
     snap: 0
     invert: 0
     type: 2
-    axis: 3
+    axis: 2
     joyNum: 1
   - serializedVersion: 3
     m_Name: J2HorizontalRotation
@@ -35,7 +35,7 @@ InputManager:
     snap: 0
     invert: 0
     type: 2
-    axis: 3
+    axis: 2
     joyNum: 2
   - serializedVersion: 3
     m_Name: J3HorizontalRotation
@@ -99,7 +99,7 @@ InputManager:
     snap: 0
     invert: 1
     type: 2
-    axis: 4
+    axis: 5
     joyNum: 1
   - serializedVersion: 3
     m_Name: J2VerticalRotation
@@ -234,7 +234,7 @@ InputManager:
     descriptiveName: Joystick 5 shoot
     descriptiveNegativeName: 
     negativeButton: 
-    positiveButton: joystick 5 button 5
+    positiveButton: joystick 1 button 5
     altNegativeButton: 
     altPositiveButton: 
     gravity: 1000
@@ -244,7 +244,7 @@ InputManager:
     invert: 0
     type: 0
     axis: 0
-    joyNum: 5
+    joyNum: 1
   - serializedVersion: 3
     m_Name: J1Horizontal
     descriptiveName: Joystick 1 horizontal rotation
