@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class BirdMovement : MonoBehaviour
 {
-
-    public Rigidbody J1RB;
-    public Rigidbody J2RB;
-    public Rigidbody J3RB;
-    public Rigidbody J4RB;
+    PlayerController.JoyStick js;
+    [HideInInspector] public float speed;
+    Rigidbody rb;
 
     void Start() {
-        
+        rb = GetComponent<Rigidbody>();
+    }
+    public void SetJoyStick(PlayerController.JoyStick value)
+    {
+        js = value;
     }
 
     void BasicMovement(string Horizontal, string Vertical, Rigidbody Player) {
@@ -33,9 +35,6 @@ public class BirdMovement : MonoBehaviour
     }
 
     void Update() {
-        BasicMovement("J1Horizontal", "J1Vertical", J1RB);
-        //BasicMovement("J2Horizontal", "J2Vertical", J2RB);
-        //BasicMovement("J3Horizontal", "J3Vertical", J3RB);
-        //BasicMovement("J4Horizontal", "J4Vertical", J4RB);
+        BasicMovement(js.ToString()+"Horizontal", js.ToString()+"Vertical", rb);
     }
 }
