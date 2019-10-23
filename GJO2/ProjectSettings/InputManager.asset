@@ -230,8 +230,13 @@ InputManager:
     axis: 0
     joyNum: 0
   - serializedVersion: 3
+<<<<<<< HEAD
+    m_Name: J3Shoot
+    descriptiveName: Joystick 3 shoot
+=======
     m_Name: Jump
     descriptiveName: 
+>>>>>>> 74e46bbe8fc3449ad2c06bf989d16b43a702514c
     descriptiveNegativeName: 
     negativeButton: 
     positiveButton: joystick button 3
