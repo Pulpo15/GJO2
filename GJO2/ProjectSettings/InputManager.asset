@@ -6,8 +6,6 @@ InputManager:
   serializedVersion: 2
   m_Axes:
   - serializedVersion: 3
-    descriptiveNegativeName: 
-    negativeButton: left
     m_Name: J1Horizontal
     descriptiveName: Joystick 1 horizontal
     descriptiveNegativeName: 
