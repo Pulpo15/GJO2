@@ -22,8 +22,7 @@ public class BirdScore : MonoBehaviour
     // Proportional values
     private const float mathConstantScore = 0.1f;
     private const float mathConstantCooldown = 0.08f;
-
-    private float time;
+    // ----------------------------------------------------    
 
     void Start()
     {
@@ -32,13 +31,7 @@ public class BirdScore : MonoBehaviour
         scoreMultiplier = timer.initialTime * mathConstantScore;        
 
         scoreInitialCooldown = timer.initialTime * mathConstantCooldown;
-        scoreCurrentCooldown = scoreInitialCooldown * scoreCooldownMultiplier;
-
-        // DEBUGS
-        Debug.Log("Initial cooldown: " + scoreInitialCooldown);
-        Debug.Log("Initial cooldown multiplier :" + scoreCooldownMultiplier);
-        Debug.Log("Initial score multiplier: " + scoreMultiplier);
-        Debug.Log("Initial score scale: " + scoreCurrentScale);
+        scoreCurrentCooldown = scoreInitialCooldown * scoreCooldownMultiplier;        
     }
 
     void Update()
@@ -60,10 +53,6 @@ public class BirdScore : MonoBehaviour
 
             score += (int)scoreMultiplier * (int)scoreCurrentScale;
             scoreCurrentCooldown = scoreInitialCooldown * scoreCooldownMultiplier;            
-
-            Debug.Log("Current cooldown :" + scoreCurrentCooldown);
-            Debug.Log("Current cooldown multiplier: " + scoreCooldownMultiplier);
-            Debug.Log("Current score scale: " + scoreCurrentScale);
         }
 
         scoreTextUpdate = score.ToString("0");
