@@ -15,14 +15,10 @@ public class GameController : MonoBehaviour
     public float planeSpeed;
 
     [Header("Other")]
-    public float timeBeforeStart;
+    public float timeBetweenRounds;
     public float timePerRound;
 
     float timer;
-
-    
-    bool readyToStart = true;
-    [HideInInspector] public int playersPressingB;
     int round = 0;
 
     public void StartGame()
@@ -34,9 +30,6 @@ public class GameController : MonoBehaviour
     }
     private void Update()
     {
-        if (readyToStart == false)
-        {
-
             timer -= Time.deltaTime;
             timerUI.text = Mathf.RoundToInt(timer).ToString();
             if (timer <= 0)
@@ -44,17 +37,6 @@ public class GameController : MonoBehaviour
                 timer = timePerRound;
                 NewRound();
             }
-        }
-
-        if (Time.time >= timeBeforeStart && readyToStart)
-        {
-            readyToStart = false;
-        }
-        if(playersPressingB == 5 && readyToStart)
-        {
-            readyToStart = false;
-            StartGame();
-        }
     }
 
     public void NewRound()

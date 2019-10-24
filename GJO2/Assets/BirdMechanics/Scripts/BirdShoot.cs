@@ -30,11 +30,6 @@ public class BirdShoot : MonoBehaviour
             Clone.GetComponent<Rigidbody>().AddRelativeForce(Vector2.down * BulletSpeed);
             Particles.Play();
             Destroy(Clone, 5.0f);
-            gc.playersPressingB++;
-        }
-        if (Input.GetButtonUp(js.ToString() + "Shoot"))
-        {
-            gc.playersPressingB--;
         }
 
     }
