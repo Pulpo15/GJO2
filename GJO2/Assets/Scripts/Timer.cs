@@ -20,7 +20,7 @@ public class Timer : MonoBehaviour
     {
         initialTimeScale = timeScale;
 
-        timer = GetComponent<Text>();
+        //timer = GetComponent<Text>();
         
         timeInSecondsShowed = initialTime;    
     }
@@ -48,6 +48,6 @@ public class Timer : MonoBehaviour
 
         timerText = minutes.ToString("00") + ":" + seconds.ToString("00");
 
-        timer.text = timerText;       
+        //timer.text = timerText;       
     }    
 }

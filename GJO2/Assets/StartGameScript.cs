@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 public class StartGameScript : MonoBehaviour
 {
+    //This scripts is hardcoded, but it doesn't need to be edited so that's fine.
+
+
     [Tooltip("The buildindex of the scene, that should be loaded when the game starts.")]
     public int sceneToLoad;
 
