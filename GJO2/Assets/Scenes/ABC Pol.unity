@@ -290,151 +290,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8482841585897718635, guid: 5dfc259c919255d4ebc1e144c6264792,
-        type: 3}
-      propertyPath: birdGraphics
-      value: 
-      objectReference: {fileID: 1958458448}
-    - target: {fileID: 8482841585897718635, guid: 5dfc259c919255d4ebc1e144c6264792,
-        type: 3}
-      propertyPath: planeGraphics
-      value: 
-      objectReference: {fileID: 1106875392}
-    - target: {fileID: 8482841585897718635, guid: 5dfc259c919255d4ebc1e144c6264792,
-        type: 3}
-      propertyPath: playerJoyStick
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3687699407998727964, guid: 5dfc259c919255d4ebc1e144c6264792,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3687699407998727964, guid: 5dfc259c919255d4ebc1e144c6264792,
-        type: 3}
-      propertyPath: m_Name
-      value: Bird Graphics
-      objectReference: {fileID: 0}
-    - target: {fileID: 3687699407998727964, guid: 5dfc259c919255d4ebc1e144c6264792,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 8171745171442737970, guid: 5dfc259c919255d4ebc1e144c6264792,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8171745171442737970, guid: 5dfc259c919255d4ebc1e144c6264792,
-        type: 3}
-      propertyPath: m_Name
-      value: Plane Graphics
-      objectReference: {fileID: 0}
-    - target: {fileID: 8171745171442737970, guid: 5dfc259c919255d4ebc1e144c6264792,
-        type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 5937713681062293309, guid: 5dfc259c919255d4ebc1e144c6264792,
-        type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 3878507682882348911, guid: 5dfc259c919255d4ebc1e144c6264792,
-        type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 6936601565204284992, guid: 5dfc259c919255d4ebc1e144c6264792,
-        type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 114984856625084441, guid: 5dfc259c919255d4ebc1e144c6264792,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 2025865584965708140, guid: 5dfc259c919255d4ebc1e144c6264792,
-        type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 596593408563139776, guid: 5dfc259c919255d4ebc1e144c6264792,
-        type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 8192066424810719949, guid: 5dfc259c919255d4ebc1e144c6264792,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4414879912867489177, guid: 5dfc259c919255d4ebc1e144c6264792,
-        type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 1926813205364683328, guid: 5dfc259c919255d4ebc1e144c6264792,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 2614040088328169891, guid: 5dfc259c919255d4ebc1e144c6264792,
-        type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 8209985250012653691, guid: 5dfc259c919255d4ebc1e144c6264792,
-        type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 1865357087734144180, guid: 5dfc259c919255d4ebc1e144c6264792,
-        type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 5503508748240815100, guid: 5dfc259c919255d4ebc1e144c6264792,
-        type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 620509504272117737, guid: 5dfc259c919255d4ebc1e144c6264792,
-        type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 5335938079805653230, guid: 5dfc259c919255d4ebc1e144c6264792,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 2031129991534355632, guid: 5dfc259c919255d4ebc1e144c6264792,
-        type: 3}
-      propertyPath: m_Layer
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 984680609016356470, guid: 5dfc259c919255d4ebc1e144c6264792,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4942924454070939739, guid: 5dfc259c919255d4ebc1e144c6264792,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1098221991956687035, guid: 5dfc259c919255d4ebc1e144c6264792,
-        type: 3}
-      propertyPath: m_Constraints
-      value: 120
-      objectReference: {fileID: 0}
-    - target: {fileID: 1098221991956687035, guid: 5dfc259c919255d4ebc1e144c6264792,
-        type: 3}
-      propertyPath: m_IsKinematic
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5dfc259c919255d4ebc1e144c6264792, type: 3}
 --- !u!114 &184598839 stripped
@@ -543,16 +398,6 @@ PrefabInstance:
       propertyPath: playerJoyStick
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 984680609016356470, guid: 5dfc259c919255d4ebc1e144c6264792,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4942924454070939739, guid: 5dfc259c919255d4ebc1e144c6264792,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1387102116694958097, guid: 5dfc259c919255d4ebc1e144c6264792,
         type: 3}
       propertyPath: m_IsActive
@@ -566,6 +411,16 @@ PrefabInstance:
     - target: {fileID: 1301004494, guid: 5dfc259c919255d4ebc1e144c6264792, type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 984680609016356470, guid: 5dfc259c919255d4ebc1e144c6264792,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4942924454070939739, guid: 5dfc259c919255d4ebc1e144c6264792,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5dfc259c919255d4ebc1e144c6264792, type: 3}
@@ -862,12 +717,6 @@ PrefabInstance:
       objectReference: {fileID: 1603475041}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5dfc259c919255d4ebc1e144c6264792, type: 3}
---- !u!1 &1106875392 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8171745171442737970, guid: 5dfc259c919255d4ebc1e144c6264792,
-    type: 3}
-  m_PrefabInstance: {fileID: 145376124}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1171595494 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5504176799683800783, guid: 5dfc259c919255d4ebc1e144c6264792,
@@ -973,16 +822,6 @@ PrefabInstance:
       propertyPath: playerJoyStick
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 984680609016356470, guid: 5dfc259c919255d4ebc1e144c6264792,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4942924454070939739, guid: 5dfc259c919255d4ebc1e144c6264792,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1387102116694958097, guid: 5dfc259c919255d4ebc1e144c6264792,
         type: 3}
       propertyPath: m_IsActive
@@ -996,6 +835,16 @@ PrefabInstance:
     - target: {fileID: 1301004494, guid: 5dfc259c919255d4ebc1e144c6264792, type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 984680609016356470, guid: 5dfc259c919255d4ebc1e144c6264792,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4942924454070939739, guid: 5dfc259c919255d4ebc1e144c6264792,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5dfc259c919255d4ebc1e144c6264792, type: 3}
@@ -1138,16 +987,6 @@ PrefabInstance:
       propertyPath: playerJoyStick
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 984680609016356470, guid: 5dfc259c919255d4ebc1e144c6264792,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4942924454070939739, guid: 5dfc259c919255d4ebc1e144c6264792,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1387102116694958097, guid: 5dfc259c919255d4ebc1e144c6264792,
         type: 3}
       propertyPath: m_IsActive
@@ -1161,6 +1000,16 @@ PrefabInstance:
     - target: {fileID: 1301004494, guid: 5dfc259c919255d4ebc1e144c6264792, type: 3}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 984680609016356470, guid: 5dfc259c919255d4ebc1e144c6264792,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4942924454070939739, guid: 5dfc259c919255d4ebc1e144c6264792,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5dfc259c919255d4ebc1e144c6264792, type: 3}
@@ -1363,9 +1212,8 @@ MonoBehaviour:
   - {fileID: 1421410203}
   birdSpeed: 2
   planeSpeed: 5
-  timeBeforeStart: 3
+  timeBetweenRounds: 0
   timePerRound: 10
-  playersPressingB: 0
 --- !u!4 &1897147085
 Transform:
   m_ObjectHideFlags: 0
@@ -1380,9 +1228,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1958458448 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5504176799683800783, guid: 5dfc259c919255d4ebc1e144c6264792,
-    type: 3}
-  m_PrefabInstance: {fileID: 145376124}
-  m_PrefabAsset: {fileID: 0}

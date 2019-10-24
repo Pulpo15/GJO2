@@ -5,13 +5,13 @@ using UnityEngine;
 public class BirdDeath : MonoBehaviour {
     public PlayerController pc;
     public bool Dead;
-   // public GameObject explosionParticleEffect;
+ public GameObject explosionParticleEffect;
     private void OnTriggerEnter(Collider collider) {    
         if (collider.gameObject.tag == "Plane"){
             pc.KillBird();
             Dead = true;
             this.gameObject.SetActive(false);
-      //      Instantiate(explosionParticleEffect, this.transform.position, Quaternion.identity);
+          Instantiate(explosionParticleEffect, this.transform.position, Quaternion.identity);
 
         }
     }
