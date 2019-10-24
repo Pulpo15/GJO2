@@ -45,6 +45,11 @@ public class PlayerController : MonoBehaviour
         birdGraphics.SetActive(true);
         bm.speed = gc.birdSpeed;
     }
+
+    public void KillBird()
+    {
+        //Send points to score script
+    }
     public void UnfreezeMovement()
     {
         bm.enabled = true;

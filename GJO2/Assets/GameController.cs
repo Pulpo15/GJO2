@@ -61,6 +61,7 @@ public class GameController : MonoBehaviour
     {
         round++;
         roundUI.text = "Round: " + round.ToString();
+        
         if(round == 6)
         {
             //Display table with who won.
