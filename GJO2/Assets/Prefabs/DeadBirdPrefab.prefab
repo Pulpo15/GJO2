@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 855064495292521889}
   - component: {fileID: 855064495292521888}
   - component: {fileID: 855064495292521895}
+  - component: {fileID: -3524046703678732475}
   m_Layer: 0
   m_Name: DeadBirdPrefab
   m_TagString: Untagged
@@ -4908,3 +4909,16 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-3524046703678732475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 855064495292521891}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdee5fa7048d51147ae74e63869c98fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  afterHowLongTime: 8

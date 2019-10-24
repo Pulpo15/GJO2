@@ -7,6 +7,7 @@ public class BirdMovement : MonoBehaviour
     PlayerController.JoyStick js;
     public float speed;
     Rigidbody rb;
+    public bool controlOnKeyboard;
 
     void Start() {
         rb = GetComponent<Rigidbody>();
@@ -38,6 +39,12 @@ public class BirdMovement : MonoBehaviour
 
         float HorizontalMovement = Input.GetAxis(Horizontal);
         float VerticalMovement = Input.GetAxis(Vertical);
+        if (controlOnKeyboard)
+        {
+            HorizontalMovement = Input.GetAxis("Horizontal");
+            VerticalMovement = Input.GetAxis("Vertical");
+
+        }
 
         Player.velocity = new Vector3(HorizontalMovement * speed, Player.velocity.y);
         Player.velocity = new Vector3(Player.velocity.x, VerticalMovement * speed);

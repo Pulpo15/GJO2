@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    [Header("Controls")]
+    public bool ControlOnKeyboard;
     public enum JoyStick
     {
         J1,
@@ -26,7 +28,7 @@ public class PlayerController : MonoBehaviour
     public GameObject birdGraphics;
 
     private GameController gc; //GameController reference
-    public PlayerScore scoreScript; //Scorescript reference
+    [HideInInspector] public PlayerScore scoreScript; //Scorescript reference
 
     private void Start()
     {

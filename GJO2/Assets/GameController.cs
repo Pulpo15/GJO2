@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using UnityEngine.SceneManagement;
 public class GameController : MonoBehaviour
 {
     [Header("UI")]
@@ -16,8 +16,15 @@ public class GameController : MonoBehaviour
     public float birdSpeed;
     public float planeSpeed;
 
+    [Header("Music")]
+    public AudioClip victorySound;
+    public AudioClip gameMusic;
+    AudioSource aS;
+
     [Header("Other")]
     public float timePerRound;
+    [Tooltip("The scene the game should go to, when the game ends")]
+    public int gameOverScene;
 
     float timer;
     int round = 0;
@@ -26,8 +33,12 @@ public class GameController : MonoBehaviour
 
     public void Start()
     {
+        aS = GetComponent<AudioSource>();
         StartCoroutine(StartGame());
         timer = timePerRound;
+        aS.clip = gameMusic;
+        aS.loop = true;
+        aS.Play();
     }
 
     IEnumerator StartGame()
@@ -69,16 +80,21 @@ public class GameController : MonoBehaviour
     public void NewRound()
     {
         Debug.Log("New round");
-        if(round != 0)
+        if (round != 0)
         {
             UIAnimator.Play("ScoreClose");
         }
         round++;
         roundUI.text = "Round: " + round.ToString();
 
-        if(round == 6)
+        if (round == 6)
         {
-            //Display table with who won.
+            StartCoroutine(EndRound());
+            roundUI.gameObject.SetActive(false);
+        }
+        else if (round == 7)
+        {
+           SceneManager.LoadScene(gameOverScene);
         }
         else
         {
@@ -102,19 +118,39 @@ public class GameController : MonoBehaviour
 
     IEnumerator EndRound()
     {
+
+        if (round != 6)
+        {
+            for (int i = 0; i < 5; i++)
+            {
+                float a = players[i].scoreScript.roundScore;
+                UIScores[i].text = Mathf.RoundToInt(a).ToString();
+            }
+
+        }
         Debug.Log("Setting score");
         for (int i = 0; i < players.Length; i++)
         {
             players[i].scoreScript.running = false;
         }
-        for (int i = 0; i < 5; i++)
+        if (round == 6)
         {
-            float a = players[i].scoreScript.roundScore;
-            UIScores[i].text = Mathf.RoundToInt(a).ToString();
+            yield return new WaitForSeconds(1f);
+            for (int i = 0; i < 5; i++)
+            {
+                float a = players[i].scoreScript.totalScore;
+                UIScores[i].text = Mathf.RoundToInt(a).ToString();
+            }
         }
-
         UIAnimator.Play("ScoreOpen");
         yield return new WaitForSeconds(2.5f);
+        if(round == 6)
+        {
+            aS.clip = victorySound;
+            aS.Play();
+            yield return new WaitForSeconds(5f);
+            //Do something cool here
+        }
         readyToSkip = true;
 
     }
