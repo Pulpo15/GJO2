@@ -11,38 +11,33 @@ public class BirdMovement : MonoBehaviour
     void Start() {
         rb = GetComponent<Rigidbody>();
     }
-    public void SetJoyStick(PlayerController.JoyStick value)
-    {
+    public void SetJoyStick(PlayerController.JoyStick value) {
         js = value;
     }
 
     void BasicMovement(string Horizontal, string Vertical, Rigidbody Player) {
 
-
         #region Rotation
-        //rotation
-        //float h1 = Input.GetAxis(Horizontal + "Rotation"); // set as your inputs 
-        //float v1 = Input.GetAxis(Vertical + "Rotation");
 
-        //Vector3 targetPostition = new Vector3(h1,
-        //                                v1,
-        //                                this.transform.position.z);
-        //this.transform.LookAt(targetPostition);
+        //if direction Right == 0,180,0
+        //if direction Left == 0,0,0
+        //if direction up == 0,0,-90
+        //if directiondown == 0,0,90
 
-        //float x = Input.GetAxis(Horizontal + "Rotation");
-        //float y = Input.GetAxis(Vertical + "Rotation");
-        //if (x != 0.0 || y != 0.0)
-        //{
-        //    float angle = Mathf.Atan2(y, x) * Mathf.Rad2Deg;
-        //    Player.rotation = Quaternion.AngleAxis(180.0f - angle, new Vector3(0,0,-1));
-        //    Debug.Log(angle);
-        //}
+        float x = Input.GetAxis(Horizontal);
+        float y = Input.GetAxis(Vertical);
+
+        if (x != 0.0 || y != 0.0) {
+            float angle = Mathf.Atan2(y, x) * Mathf.Rad2Deg;
+            Player.rotation = Quaternion.AngleAxis(180.0f - angle, new Vector3(0, 200, -200));
+        }
+
         #endregion
 
-        //movement
+        //Movement
+
         float HorizontalMovement = Input.GetAxis(Horizontal);
         float VerticalMovement = Input.GetAxis(Vertical);
-
 
         Player.velocity = new Vector3(HorizontalMovement * speed, Player.velocity.y);
         Player.velocity = new Vector3(Player.velocity.x, VerticalMovement * speed);
