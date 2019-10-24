@@ -20,23 +20,23 @@ public class BirdMovement : MonoBehaviour
 
 
         #region Rotation
-        /*//rotation
-        float h1 = Input.GetAxis(Horizontal + "Rotation"); // set as your inputs 
-        float v1 = Input.GetAxis(Vertical + "Rotation");
+        //rotation
+        //float h1 = Input.GetAxis(Horizontal + "Rotation"); // set as your inputs 
+        //float v1 = Input.GetAxis(Vertical + "Rotation");
 
-        Vector3 targetPostition = new Vector3(h1,
-                                        v1, 
-                                        this.transform.position.z);
-        this.transform.LookAt(targetPostition);
+        //Vector3 targetPostition = new Vector3(h1,
+        //                                v1, 
+        //                                this.transform.position.z);
+        //this.transform.LookAt(targetPostition);
 
-        /*
-        float x = Input.GetAxis(Horizontal + "Rotation");
-        float y = Input.GetAxis(Vertical + "Rotation");
-     //   if (x != 0.0 || y != 0.0) {
-            float angle = Mathf.Atan2(y, x) * Mathf.Rad2Deg;
-            Player.rotation = Quaternion.AngleAxis(-90.0f - angle, new Vector3(0,0,-1));
-            Debug.Log(angle);
-        //}*/
+        
+        //float x = Input.GetAxis(Horizontal + "Rotation");
+        //float y = Input.GetAxis(Vertical + "Rotation");
+        //if (x != 0.0 || y != 0.0) {
+        //    float angle = Mathf.Atan2(y, x) * Mathf.Rad2Deg;
+        //    Player.rotation = Quaternion.AngleAxis(-90.0f - angle, new Vector3(-1,0,0));
+        //    Debug.Log(angle);
+        //}
         #endregion
 
         //movement

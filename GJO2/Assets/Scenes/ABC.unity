@@ -211,6 +211,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!1 &100611360 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3687699407998727964, guid: 5dfc259c919255d4ebc1e144c6264792,
+    type: 3}
+  m_PrefabInstance: {fileID: 1047609808}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &145376124
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -278,6 +284,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8482841585897718635, guid: 5dfc259c919255d4ebc1e144c6264792,
+        type: 3}
+      propertyPath: birdGraphics
+      value: 
+      objectReference: {fileID: 1068128188}
+    - target: {fileID: 8482841585897718635, guid: 5dfc259c919255d4ebc1e144c6264792,
+        type: 3}
+      propertyPath: planeGraphics
+      value: 
+      objectReference: {fileID: 1106875392}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5dfc259c919255d4ebc1e144c6264792, type: 3}
 --- !u!114 &184598839 stripped
@@ -292,12 +308,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0566a4fcf67def49be9f6808920cf5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &269541641 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1098221991591680775, guid: 5dfc259c919255d4ebc1e144c6264792,
-    type: 3}
-  m_PrefabInstance: {fileID: 1047609808}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &361921620 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8482841585897718635, guid: 5dfc259c919255d4ebc1e144c6264792,
@@ -399,12 +409,12 @@ PrefabInstance:
         type: 3}
       propertyPath: birdGraphics
       value: 
-      objectReference: {fileID: 1852354662}
+      objectReference: {fileID: 695216361}
     - target: {fileID: 8482841585897718635, guid: 5dfc259c919255d4ebc1e144c6264792,
         type: 3}
       propertyPath: planeGraphics
       value: 
-      objectReference: {fileID: 1218037225}
+      objectReference: {fileID: 964049700}
     - target: {fileID: 8482841585897718635, guid: 5dfc259c919255d4ebc1e144c6264792,
         type: 3}
       propertyPath: playerJoyStick
@@ -509,6 +519,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &695216361 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3687699407998727964, guid: 5dfc259c919255d4ebc1e144c6264792,
+    type: 3}
+  m_PrefabInstance: {fileID: 485440112}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &759602485 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8482841585897718635, guid: 5dfc259c919255d4ebc1e144c6264792,
@@ -521,6 +537,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0566a4fcf67def49be9f6808920cf5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &841398849 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8171745171442737970, guid: 5dfc259c919255d4ebc1e144c6264792,
+    type: 3}
+  m_PrefabInstance: {fileID: 1519397307}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &876249588
 GameObject:
   m_ObjectHideFlags: 0
@@ -633,6 +655,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0566a4fcf67def49be9f6808920cf5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &964049700 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8171745171442737970, guid: 5dfc259c919255d4ebc1e144c6264792,
+    type: 3}
+  m_PrefabInstance: {fileID: 485440112}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1047609808
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -704,12 +732,12 @@ PrefabInstance:
         type: 3}
       propertyPath: birdGraphics
       value: 
-      objectReference: {fileID: 269541641}
+      objectReference: {fileID: 100611360}
     - target: {fileID: 8482841585897718635, guid: 5dfc259c919255d4ebc1e144c6264792,
         type: 3}
       propertyPath: planeGraphics
       value: 
-      objectReference: {fileID: 390203737}
+      objectReference: {fileID: 1189426442}
     - target: {fileID: 8482841585897718635, guid: 5dfc259c919255d4ebc1e144c6264792,
         type: 3}
       propertyPath: playerJoyStick
@@ -731,6 +759,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5dfc259c919255d4ebc1e144c6264792, type: 3}
+--- !u!1 &1068128188 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3687699407998727964, guid: 5dfc259c919255d4ebc1e144c6264792,
+    type: 3}
+  m_PrefabInstance: {fileID: 145376124}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1106875392 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8171745171442737970, guid: 5dfc259c919255d4ebc1e144c6264792,
+    type: 3}
+  m_PrefabInstance: {fileID: 145376124}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1189426442 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8171745171442737970, guid: 5dfc259c919255d4ebc1e144c6264792,
+    type: 3}
+  m_PrefabInstance: {fileID: 1047609808}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1218037225 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1387102116694958097, guid: 5dfc259c919255d4ebc1e144c6264792,
@@ -767,12 +813,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b72500394ba2ec5439e139fea7e2689c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &1283141728 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1098221991591680775, guid: 5dfc259c919255d4ebc1e144c6264792,
-    type: 3}
-  m_PrefabInstance: {fileID: 1819030743}
-  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1421410203 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8482841585897718635, guid: 5dfc259c919255d4ebc1e144c6264792,
@@ -879,12 +919,12 @@ PrefabInstance:
         type: 3}
       propertyPath: birdGraphics
       value: 
-      objectReference: {fileID: 1674150251}
+      objectReference: {fileID: 1759508512}
     - target: {fileID: 8482841585897718635, guid: 5dfc259c919255d4ebc1e144c6264792,
         type: 3}
       propertyPath: planeGraphics
       value: 
-      objectReference: {fileID: 1245636841}
+      objectReference: {fileID: 841398849}
     - target: {fileID: 8482841585897718635, guid: 5dfc259c919255d4ebc1e144c6264792,
         type: 3}
       propertyPath: playerJoyStick
@@ -906,6 +946,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5dfc259c919255d4ebc1e144c6264792, type: 3}
+--- !u!1 &1614287644 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3687699407998727964, guid: 5dfc259c919255d4ebc1e144c6264792,
+    type: 3}
+  m_PrefabInstance: {fileID: 1819030743}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1635891858
 GameObject:
   m_ObjectHideFlags: 0
@@ -952,9 +998,9 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1674150251 stripped
+--- !u!1 &1759508512 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 1098221991591680775, guid: 5dfc259c919255d4ebc1e144c6264792,
+  m_CorrespondingSourceObject: {fileID: 3687699407998727964, guid: 5dfc259c919255d4ebc1e144c6264792,
     type: 3}
   m_PrefabInstance: {fileID: 1519397307}
   m_PrefabAsset: {fileID: 0}
@@ -1034,12 +1080,12 @@ PrefabInstance:
         type: 3}
       propertyPath: birdGraphics
       value: 
-      objectReference: {fileID: 1283141728}
+      objectReference: {fileID: 1614287644}
     - target: {fileID: 8482841585897718635, guid: 5dfc259c919255d4ebc1e144c6264792,
         type: 3}
       propertyPath: planeGraphics
       value: 
-      objectReference: {fileID: 1473797474}
+      objectReference: {fileID: 1881801752}
     - target: {fileID: 8482841585897718635, guid: 5dfc259c919255d4ebc1e144c6264792,
         type: 3}
       propertyPath: playerJoyStick
@@ -1138,12 +1184,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1829983740}
   m_CullTransparentMesh: 0
---- !u!1 &1852354662 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1098221991591680775, guid: 5dfc259c919255d4ebc1e144c6264792,
-    type: 3}
-  m_PrefabInstance: {fileID: 485440112}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1868196411
 GameObject:
   m_ObjectHideFlags: 0
@@ -1221,6 +1261,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1868196411}
   m_CullTransparentMesh: 0
+--- !u!1 &1881801752 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8171745171442737970, guid: 5dfc259c919255d4ebc1e144c6264792,
+    type: 3}
+  m_PrefabInstance: {fileID: 1819030743}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1897147083
 GameObject:
   m_ObjectHideFlags: 0
