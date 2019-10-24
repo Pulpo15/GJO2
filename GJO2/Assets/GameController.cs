@@ -11,6 +11,8 @@ public class GameController : MonoBehaviour
 
     [Header("Players")]
     public PlayerController[] players;
+    public float birdSpeed;
+    public float planeSpeed;
 
     [Header("Other")]
     public float timeBeforeStart;

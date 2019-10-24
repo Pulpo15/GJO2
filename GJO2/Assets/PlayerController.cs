@@ -22,10 +22,13 @@ public class PlayerController : MonoBehaviour
     public GameObject planeGraphics;
     public GameObject birdGraphics;
 
+    private GameController gc;
+
     private void Start()
     {
         bm = GetComponent<BirdMovement>();
         bm.SetJoyStick(playerJoyStick);
+        gc = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
         //bs.SetJoyStick(playerJoyStick);
     }
     public void SetAsPlane()
@@ -33,12 +36,14 @@ public class PlayerController : MonoBehaviour
         plane = true;
         planeGraphics.SetActive(true);
         birdGraphics.SetActive(false);
+        bm.speed = gc.planeSpeed;
     }
     public void SetAsBird()
     {
         plane = false;
         planeGraphics.SetActive(false);
         birdGraphics.SetActive(true);
+        bm.speed = gc.birdSpeed;
     }
     public void UnfreezeMovement()
     {

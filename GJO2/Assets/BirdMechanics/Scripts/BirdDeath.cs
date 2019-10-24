@@ -9,6 +9,7 @@ public class BirdDeath : MonoBehaviour {
         if (collider.gameObject.name == "J5Bullet(Clone)"){
             gameObject.SetActive(false);
             Dead = true;
+
         }
     }
 }

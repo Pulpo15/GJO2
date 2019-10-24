@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1098221991591680775}
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.02, y: -0.46, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.7403, y: 0.20436946, z: 0.38608}
   m_Children: []
   m_Father: {fileID: 1098221991956687031}
@@ -103,7 +103,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1098221991956687031}
   - component: {fileID: 1098221991956687035}
-  - component: {fileID: 1098221991956687025}
   - component: {fileID: 8482841585897718635}
   - component: {fileID: 3276929740474173035}
   m_Layer: 8
@@ -146,19 +145,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 88
   m_CollisionDetection: 0
---- !u!114 &1098221991956687025
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1098221991956687032}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e56cd63c6a9dd0142b2612783acf9e4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Dead: 0
 --- !u!114 &8482841585897718635
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -171,6 +157,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0566a4fcf67def49be9f6808920cf5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerJoyStick: 0
+  plane: 0
+  planeGraphics: {fileID: 1387102116694958097}
+  birdGraphics: {fileID: 1098221991591680775}
 --- !u!114 &3276929740474173035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183,7 +173,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 069764d7d1ccca84086e14664a43befe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerJoyStick: 0
   speed: 0
 --- !u!1 &1098221992836533323
 GameObject:
@@ -4950,13 +4939,14 @@ GameObject:
   - component: {fileID: 458768600307543150}
   - component: {fileID: 3500534252660832893}
   - component: {fileID: 4982706747944499701}
+  - component: {fileID: 991964204}
   m_Layer: 8
   m_Name: Plane Graphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5053358372210800411
 Transform:
   m_ObjectHideFlags: 0
@@ -4965,7 +4955,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1387102116694958097}
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.02, y: -0.46, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.7403, y: 0.20436946, z: 0.38608}
   m_Children: []
   m_Father: {fileID: 1098221991956687031}
@@ -5031,3 +5021,15 @@ CapsuleCollider:
   m_Height: 2
   m_Direction: 1
   m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
+--- !u!114 &991964204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1387102116694958097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b72500394ba2ec5439e139fea7e2689c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
