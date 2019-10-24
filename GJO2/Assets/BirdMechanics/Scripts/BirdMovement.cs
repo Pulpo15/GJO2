@@ -25,16 +25,16 @@ public class BirdMovement : MonoBehaviour
         //float v1 = Input.GetAxis(Vertical + "Rotation");
 
         //Vector3 targetPostition = new Vector3(h1,
-        //                                v1, 
+        //                                v1,
         //                                this.transform.position.z);
         //this.transform.LookAt(targetPostition);
 
-        
         //float x = Input.GetAxis(Horizontal + "Rotation");
         //float y = Input.GetAxis(Vertical + "Rotation");
-        //if (x != 0.0 || y != 0.0) {
+        //if (x != 0.0 || y != 0.0)
+        //{
         //    float angle = Mathf.Atan2(y, x) * Mathf.Rad2Deg;
-        //    Player.rotation = Quaternion.AngleAxis(-90.0f - angle, new Vector3(-1,0,0));
+        //    Player.rotation = Quaternion.AngleAxis(180.0f - angle, new Vector3(0,0,-1));
         //    Debug.Log(angle);
         //}
         #endregion
