@@ -168,6 +168,7 @@ GameObject:
   - component: {fileID: 1098221991956687035}
   - component: {fileID: 8482841585897718635}
   - component: {fileID: 3276929740474173035}
+  - component: {fileID: 1496958054}
   m_Layer: 8
   m_Name: J1
   m_TagString: Untagged
@@ -224,6 +225,7 @@ MonoBehaviour:
   plane: 0
   planeGraphics: {fileID: 8171745171442737970}
   birdGraphics: {fileID: 5504176799683800783}
+  scoreScript: {fileID: 0}
 --- !u!114 &3276929740474173035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -237,6 +239,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0
+--- !u!114 &1496958054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1098221991956687032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6e3bd8f4c951db49af6f313aeb43d71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialBirdScore: 0
+  initialPlaneScore: 300
+  initialPointsPerSecond: 10
+  pointsPerSecondMultiplier: 0.1
+  roundScore: 0
+  totalScore: 0
+  plane: 0
+  running: 0
 --- !u!1 &1098221992836533323
 GameObject:
   m_ObjectHideFlags: 0

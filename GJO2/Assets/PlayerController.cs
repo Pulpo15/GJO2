@@ -13,23 +13,27 @@ public class PlayerController : MonoBehaviour
         J5
     }
     [Header("Joystick")]
+    [Tooltip("Decides which joystick is connected to this player.")]
     public JoyStick playerJoyStick;
     [HideInInspector] public bool plane;
 
     BirdMovement bm;
     //BirdShoot bs;
     [Header("Graphics")]
+    [Tooltip("Gameobject containing the plane's graphics/3D model")]
     public GameObject planeGraphics;
+    [Tooltip("Gameobject containing the bird's graphics/3D model")]
     public GameObject birdGraphics;
 
-    private GameController gc;
+    private GameController gc; //GameController reference
+    public PlayerScore scoreScript; //Scorescript reference
 
     private void Start()
     {
         bm = GetComponent<BirdMovement>();
         bm.SetJoyStick(playerJoyStick);
         gc = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
-        //bs.SetJoyStick(playerJoyStick);
+        scoreScript = GetComponent<PlayerScore>();
     }
     public void SetAsPlane()
     {
@@ -37,6 +41,7 @@ public class PlayerController : MonoBehaviour
         planeGraphics.SetActive(true);
         birdGraphics.SetActive(false);
         bm.speed = gc.planeSpeed;
+        scoreScript.plane = true;
     }
     public void SetAsBird()
     {
@@ -44,11 +49,12 @@ public class PlayerController : MonoBehaviour
         planeGraphics.SetActive(false);
         birdGraphics.SetActive(true);
         bm.speed = gc.birdSpeed;
+        scoreScript.plane = false;
     }
 
     public void KillBird()
     {
-        //Send points to score script
+        scoreScript.RaiseRoundScore(100);
     }
     public void UnfreezeMovement()
     {
