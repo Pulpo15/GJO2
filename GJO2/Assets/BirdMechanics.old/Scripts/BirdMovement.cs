@@ -4,17 +4,12 @@ using UnityEngine;
 
 public class BirdMovement : MonoBehaviour
 {
-    PlayerController.JoyStick js;
-    [HideInInspector] public float speed;
-    Rigidbody rb;
 
-    void Start() {
-        rb = GetComponent<Rigidbody>();
-    }
-    public void SetJoyStick(PlayerController.JoyStick value)
-    {
-        js = value;
-    }
+    public Rigidbody J1RB;
+    public Rigidbody J2RB;
+    public Rigidbody J3RB;
+    public Rigidbody J4RB;
+
 
     void BasicMovement(string Horizontal, string Vertical, Rigidbody Player) {
         float x = Input.GetAxis(Horizontal + "Rotation");
@@ -35,6 +30,9 @@ public class BirdMovement : MonoBehaviour
     }
 
     void Update() {
-        BasicMovement(js.ToString()+"Horizontal", js.ToString()+"Vertical", rb);
+        BasicMovement("J1Horizontal", "J1Vertical", J1RB);
+        BasicMovement("J2Horizontal", "J2Vertical", J2RB);
+        //BasicMovement("J3Horizontal", "J3Vertical", J3RB);
+        //BasicMovement("J1Horizontal", "J1Vertical", J4RB);
     }
 }
