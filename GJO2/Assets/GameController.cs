@@ -50,12 +50,6 @@ public class GameController : MonoBehaviour
         }
         NewRound();
     }
-
-    public void SkipRound()
-    {
-        timer = 0;
-    }
-
     private void Update()
     {
         if ((Input.GetButtonDown("A-Button") || Input.GetKeyDown(KeyCode.Space)) && readyToSkip)
@@ -123,7 +117,6 @@ public class GameController : MonoBehaviour
         inRound = true;
     }
 
-    bool gameEnded;
     IEnumerator EndRound()
     {
 
@@ -131,9 +124,8 @@ public class GameController : MonoBehaviour
         {
             for (int i = 0; i < 5; i++)
             {
-                float b = players[i].scoreScript.roundBirdScore;
                 float a = players[i].scoreScript.roundScore;
-                UIScores[i].text = Mathf.RoundToInt(a+b).ToString();
+                UIScores[i].text = Mathf.RoundToInt(a).ToString();
             }
 
         }
@@ -143,13 +135,11 @@ public class GameController : MonoBehaviour
             players[i].scoreScript.running = false;
             players[i].FreezeMovement();
         }
-        if (round == 6 && gameEnded==false)
+        if (round == 6)
         {
-            gameEnded = true;
             yield return new WaitForSeconds(1f);
             for (int i = 0; i < 5; i++)
             {
-                players[i].scoreScript.NewRoundScoreSetup();
                 float a = players[i].scoreScript.totalScore;
                 UIScores[i].text = Mathf.RoundToInt(a).ToString();
             }

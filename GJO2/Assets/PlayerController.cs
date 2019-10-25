@@ -19,7 +19,6 @@ public class PlayerController : MonoBehaviour
     public JoyStick playerJoyStick;
     [HideInInspector] public bool plane;
 
-    public bool birdDead;
     BirdMovement bm;
     //BirdShoot bs;
     [Header("Graphics")]
@@ -28,7 +27,7 @@ public class PlayerController : MonoBehaviour
     [Tooltip("Gameobject containing the bird's graphics/3D model")]
     public GameObject birdGraphics;
 
-    [HideInInspector]public GameController gc; //GameController reference
+    private GameController gc; //GameController reference
     [HideInInspector] public PlayerScore scoreScript; //Scorescript reference
 
     private void Start()
@@ -57,11 +56,10 @@ public class PlayerController : MonoBehaviour
 
     public void KillBird()
     {
-        birdDead = true;
+        scoreScript.RaiseRoundScore(100);
     }
     public void UnfreezeMovement()
     {
-        birdDead = false;
         bm.running = true;
     }
     public void FreezeMovement()

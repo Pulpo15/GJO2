@@ -120,6 +120,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &134751141 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1142794151824394035, guid: 5dfc259c919255d4ebc1e144c6264792,
+    type: 3}
+  m_PrefabInstance: {fileID: 1319810642560144943}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &184278826
 GameObject:
   m_ObjectHideFlags: 0
@@ -199,108 +205,6 @@ Transform:
   m_Father: {fileID: 184278827}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &343636770 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8171745171442737970, guid: 5dfc259c919255d4ebc1e144c6264792,
-    type: 3}
-  m_PrefabInstance: {fileID: 1319810642387457155}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &343636773
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 343636770}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: fff26d9c1e684594282ad42a8d681aa2, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 0.26
-  m_Pitch: 1
-  Loop: 1
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
 --- !u!1 &458414786
 GameObject:
   m_ObjectHideFlags: 0
@@ -427,11 +331,11 @@ Transform:
   m_Father: {fileID: 1535000708}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &844803480 stripped
+--- !u!1 &753704312 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 8171745171442737970, guid: 5dfc259c919255d4ebc1e144c6264792,
+  m_CorrespondingSourceObject: {fileID: 1142794151824394035, guid: 5dfc259c919255d4ebc1e144c6264792,
     type: 3}
-  m_PrefabInstance: {fileID: 1319810641788052264}
+  m_PrefabInstance: {fileID: 1319810641014472260}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &906748472 stripped
 GameObject:
@@ -487,6 +391,12 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
+--- !u!1 &1016878213 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1142794151824394035, guid: 5dfc259c919255d4ebc1e144c6264792,
+    type: 3}
+  m_PrefabInstance: {fileID: 1319810641788052264}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1045265534 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5504176799683800783, guid: 5dfc259c919255d4ebc1e144c6264792,
@@ -600,29 +510,11 @@ Transform:
   m_Father: {fileID: 1535000708}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -3.137, y: 0, z: 0}
---- !u!1 &1176383282 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8171745171442737970, guid: 5dfc259c919255d4ebc1e144c6264792,
-    type: 3}
-  m_PrefabInstance: {fileID: 1319810642560144943}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1270252931 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8171745171442737970, guid: 5dfc259c919255d4ebc1e144c6264792,
-    type: 3}
-  m_PrefabInstance: {fileID: 1319810642048036239}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1279158075 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5504176799683800783, guid: 5dfc259c919255d4ebc1e144c6264792,
     type: 3}
   m_PrefabInstance: {fileID: 1319810642048036239}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1316846533 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8171745171442737970, guid: 5dfc259c919255d4ebc1e144c6264792,
-    type: 3}
-  m_PrefabInstance: {fileID: 1319810641014472260}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1419540988
 PrefabInstance:
@@ -719,6 +611,12 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5504176799683800783, guid: 5dfc259c919255d4ebc1e144c6264792,
     type: 3}
   m_PrefabInstance: {fileID: 1319810642560144943}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1456533376 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1142794151824394035, guid: 5dfc259c919255d4ebc1e144c6264792,
+    type: 3}
+  m_PrefabInstance: {fileID: 1319810642048036239}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1535000707
 GameObject:
@@ -1214,7 +1112,7 @@ PrefabInstance:
         type: 3}
       propertyPath: planeGraphics
       value: 
-      objectReference: {fileID: 1316846533}
+      objectReference: {fileID: 753704312}
     - target: {fileID: 8482841585897718635, guid: 5dfc259c919255d4ebc1e144c6264792,
         type: 3}
       propertyPath: playerJoyStick
@@ -1255,11 +1153,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8171745171442737970, guid: 5dfc259c919255d4ebc1e144c6264792,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6875568973602162491, guid: 5dfc259c919255d4ebc1e144c6264792,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -1273,20 +1166,6 @@ PrefabInstance:
     - target: {fileID: 1496958054, guid: 5dfc259c919255d4ebc1e144c6264792, type: 3}
       propertyPath: maxSurviveScore
       value: 300
-      objectReference: {fileID: 0}
-    - target: {fileID: 1496958054, guid: 5dfc259c919255d4ebc1e144c6264792, type: 3}
-      propertyPath: birdPointDead
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 5133126285011013921, guid: 5dfc259c919255d4ebc1e144c6264792,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 5133126285011013921, guid: 5dfc259c919255d4ebc1e144c6264792,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 13.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5dfc259c919255d4ebc1e144c6264792, type: 3}
@@ -1523,7 +1402,7 @@ MonoBehaviour:
   planeSpeed: 5
   victorySound: {fileID: 8300000, guid: ed46ea4ba5c38da45b8bd3679283dfcc, type: 3}
   gameMusic: {fileID: 8300000, guid: 4fe14d01c73308b4693bc714a59b536e, type: 3}
-  timePerRound: 30
+  timePerRound: 5
   gameOverScene: 0
 --- !u!1 &1319810641476107572
 GameObject:
@@ -1824,7 +1703,7 @@ PrefabInstance:
         type: 3}
       propertyPath: planeGraphics
       value: 
-      objectReference: {fileID: 844803480}
+      objectReference: {fileID: 1016878213}
     - target: {fileID: 8482841585897718635, guid: 5dfc259c919255d4ebc1e144c6264792,
         type: 3}
       propertyPath: playerJoyStick
@@ -1865,11 +1744,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8171745171442737970, guid: 5dfc259c919255d4ebc1e144c6264792,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6875568973602162491, guid: 5dfc259c919255d4ebc1e144c6264792,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1883,20 +1757,6 @@ PrefabInstance:
     - target: {fileID: 1496958054, guid: 5dfc259c919255d4ebc1e144c6264792, type: 3}
       propertyPath: maxSurviveScore
       value: 300
-      objectReference: {fileID: 0}
-    - target: {fileID: 1496958054, guid: 5dfc259c919255d4ebc1e144c6264792, type: 3}
-      propertyPath: birdPointDead
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 5133126285011013921, guid: 5dfc259c919255d4ebc1e144c6264792,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 13.2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5133126285011013921, guid: 5dfc259c919255d4ebc1e144c6264792,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5dfc259c919255d4ebc1e144c6264792, type: 3}
@@ -2228,7 +2088,7 @@ PrefabInstance:
         type: 3}
       propertyPath: planeGraphics
       value: 
-      objectReference: {fileID: 1270252931}
+      objectReference: {fileID: 1456533376}
     - target: {fileID: 8482841585897718635, guid: 5dfc259c919255d4ebc1e144c6264792,
         type: 3}
       propertyPath: playerJoyStick
@@ -2272,7 +2132,7 @@ PrefabInstance:
     - target: {fileID: 8171745171442737970, guid: 5dfc259c919255d4ebc1e144c6264792,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6875568973602162491, guid: 5dfc259c919255d4ebc1e144c6264792,
         type: 3}
@@ -2288,19 +2148,15 @@ PrefabInstance:
       propertyPath: maxSurviveScore
       value: 300
       objectReference: {fileID: 0}
-    - target: {fileID: 1496958054, guid: 5dfc259c919255d4ebc1e144c6264792, type: 3}
-      propertyPath: birdPointDead
-      value: 100
-      objectReference: {fileID: 0}
     - target: {fileID: 5133126285011013921, guid: 5dfc259c919255d4ebc1e144c6264792,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 13.2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5133126285011013921, guid: 5dfc259c919255d4ebc1e144c6264792,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.4
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5dfc259c919255d4ebc1e144c6264792, type: 3}
@@ -2414,18 +2270,9 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8171745171442737970, guid: 5dfc259c919255d4ebc1e144c6264792,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1496958054, guid: 5dfc259c919255d4ebc1e144c6264792, type: 3}
       propertyPath: maxSurviveScore
       value: 300
-      objectReference: {fileID: 0}
-    - target: {fileID: 1496958054, guid: 5dfc259c919255d4ebc1e144c6264792, type: 3}
-      propertyPath: birdPointDead
-      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5dfc259c919255d4ebc1e144c6264792, type: 3}
@@ -2809,7 +2656,7 @@ PrefabInstance:
         type: 3}
       propertyPath: planeGraphics
       value: 
-      objectReference: {fileID: 1176383282}
+      objectReference: {fileID: 134751141}
     - target: {fileID: 8709931936343383131, guid: 5dfc259c919255d4ebc1e144c6264792,
         type: 3}
       propertyPath: m_IsActive
@@ -2828,15 +2675,11 @@ PrefabInstance:
     - target: {fileID: 8171745171442737970, guid: 5dfc259c919255d4ebc1e144c6264792,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1496958054, guid: 5dfc259c919255d4ebc1e144c6264792, type: 3}
       propertyPath: maxSurviveScore
       value: 300
-      objectReference: {fileID: 0}
-    - target: {fileID: 1496958054, guid: 5dfc259c919255d4ebc1e144c6264792, type: 3}
-      propertyPath: birdPointDead
-      value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5dfc259c919255d4ebc1e144c6264792, type: 3}
