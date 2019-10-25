@@ -5,27 +5,40 @@ using UnityEngine.UI;
 
 public class PlayerScore : MonoBehaviour
 {
-    
+
     [Header("Initial stats")]
     public int maxSurviveScore;                 //The maximum amount of points you can get, from being alive.
     public int minSurviveScore;                 //The minimum amount of points you can get, from being alive.
     public int initialPointsPerSecond;          //How many points you get per second in the start of a round.
-    
+
     private float pointsPerSecond;              //Amount of points player receives per second.
     public float pointsPerSecondMultiplier;     //How much points per second is multiplied with every second.
 
+    public int birdPointDead;
+
     [Header("Current Score")]
-    public float roundScore;  //Amount of points earned in one round.
-    public int totalScore;    //Total amount of points earned.
-    
-    public bool plane;                                 //Is the player currently a plane or a bird?
-    public bool running;                               //Are you currently in a round?
+    public float roundScore;                    //Amount of points earned in one round.
+    public float roundBirdScore;                //Amount of points received from killing birds;
+    public int totalScore;                      //Total amount of points earned.
+
+    public bool plane;                          //Is the player currently a plane or a bird?
+    public bool running;                        //Are you currently in a round?
 
     private float time = 0.0f;
+    PlayerController pc;
+
+    int birdsKilled = 0;
+
+    private void Awake()
+    {
+        pc = GetComponent<PlayerController>();
+    }
 
     public void NewRoundScoreSetup()
     {
+        birdsKilled = 0;
         totalScore += Mathf.RoundToInt(roundScore);
+        totalScore += Mathf.RoundToInt(roundBirdScore);
         pointsPerSecond = initialPointsPerSecond;
         if (plane)
         {
@@ -35,31 +48,33 @@ public class PlayerScore : MonoBehaviour
         {
             roundScore = minSurviveScore;
         }
-        
+        roundBirdScore = 0;
+
     }
 
     void FixedUpdate()
     {
         if (running)
-        {
+        {if(birdsKilled == 4)
+            {
+                pc.gc.SkipRound();
+            }
             time += Time.deltaTime;
             if (time >= 1f)//Runs every second
             {
                 time = 0.0f;
                 if (plane)
                 {
-                    if(roundScore <= minSurviveScore)
+
+                    roundScore -= pointsPerSecond;
+                    if (roundScore <= minSurviveScore)
                     {
                         roundScore = minSurviveScore;
                     }
-                    else
-                    {
-                        roundScore -= pointsPerSecond;
-                    }
                 }
-                else
+                else if (pc.birdDead == false)
                 {
-                    if(roundScore >= maxSurviveScore)
+                    if (roundScore >= maxSurviveScore)
                     {
                         roundScore = maxSurviveScore;
                     }
@@ -82,8 +97,9 @@ public class PlayerScore : MonoBehaviour
     {
         return totalScore;
     }
-    public void RaiseRoundScore(int value)
+    public void BirdKill()
     {
-        roundScore += value;
+        birdsKilled++;
+        roundBirdScore += birdPointDead;
     }
 }

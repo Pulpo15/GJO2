@@ -9,6 +9,7 @@ public class BirdDeath : MonoBehaviour {
     private void OnTriggerEnter(Collider collider) {    
         if (collider.gameObject.tag == "Plane"){
             pc.KillBird();
+            collider.GetComponentInParent<PlayerScore>().BirdKill();
             Dead = true;
             this.gameObject.SetActive(false);
           Instantiate(explosionParticleEffect, this.transform.position, Quaternion.identity);
