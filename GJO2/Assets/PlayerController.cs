@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [Header("Controls")]
-    public bool ControlOnKeyboard;
+    #region Controls
     public enum JoyStick
     {
         J1,
@@ -14,20 +13,27 @@ public class PlayerController : MonoBehaviour
         J4,
         J5
     }
-    [Header("Joystick")]
+
+    [Header("Controls")]
+    public bool ControlOnKeyboard;
     [Tooltip("Decides which joystick is connected to this player.")]
     public JoyStick playerJoyStick;
-    [HideInInspector] public bool plane;
+    #endregion
 
+    public Vector3 planeStartPos;
+    public Vector3 birdStartPos;
+
+    [HideInInspector] public bool plane;
     public bool birdDead;
     BirdMovement bm;
     //BirdShoot bs;
+    #region Graphics
     [Header("Graphics")]
     [Tooltip("Gameobject containing the plane's graphics/3D model")]
     public GameObject planeGraphics;
     [Tooltip("Gameobject containing the bird's graphics/3D model")]
     public GameObject birdGraphics;
-
+    #endregion
     [HideInInspector]public GameController gc; //GameController reference
     [HideInInspector] public PlayerScore scoreScript; //Scorescript reference
 
@@ -40,6 +46,7 @@ public class PlayerController : MonoBehaviour
     }
     public void SetAsPlane()
     {
+        this.gameObject.transform.position = planeStartPos;
         plane = true;
         planeGraphics.SetActive(true);
         birdGraphics.SetActive(false);
@@ -48,6 +55,7 @@ public class PlayerController : MonoBehaviour
     }
     public void SetAsBird()
     {
+        this.gameObject.transform.position = birdStartPos;
         plane = false;
         planeGraphics.SetActive(false);
         birdGraphics.SetActive(true);
