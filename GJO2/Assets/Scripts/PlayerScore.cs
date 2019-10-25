@@ -7,8 +7,8 @@ public class PlayerScore : MonoBehaviour
 {
     
     [Header("Initial stats")]
-    public int initialBirdScore;                //How many points birds start with every round.
-    public int initialPlaneScore;               //How many points planes start with every round.
+    public int maxSurviveScore;                 //The maximum amount of points you can get, from being alive.
+    public int minSurviveScore;                 //The minimum amount of points you can get, from being alive.
     public int initialPointsPerSecond;          //How many points you get per second in the start of a round.
     
     private float pointsPerSecond;              //Amount of points player receives per second.
@@ -29,11 +29,11 @@ public class PlayerScore : MonoBehaviour
         pointsPerSecond = initialPointsPerSecond;
         if (plane)
         {
-            roundScore = initialPlaneScore;
+            roundScore = maxSurviveScore;
         }
         else
         {
-            roundScore = initialBirdScore;
+            roundScore = minSurviveScore;
         }
         
     }
@@ -48,13 +48,25 @@ public class PlayerScore : MonoBehaviour
                 time = 0.0f;
                 if (plane)
                 {
-                    Debug.Log("Plane pps");
-                    roundScore -= pointsPerSecond;
+                    if(roundScore <= minSurviveScore)
+                    {
+                        roundScore = minSurviveScore;
+                    }
+                    else
+                    {
+                        roundScore -= pointsPerSecond;
+                    }
                 }
                 else
                 {
-                    Debug.Log("Bird pps");
-                    roundScore += pointsPerSecond;
+                    if(roundScore >= maxSurviveScore)
+                    {
+                        roundScore = maxSurviveScore;
+                    }
+                    else
+                    {
+                        roundScore += pointsPerSecond;
+                    }
                 }
                 pointsPerSecond += pointsPerSecond * pointsPerSecondMultiplier;
             }

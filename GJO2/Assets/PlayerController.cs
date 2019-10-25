@@ -60,11 +60,11 @@ public class PlayerController : MonoBehaviour
     }
     public void UnfreezeMovement()
     {
-        bm.enabled = true;
+        bm.running = true;
     }
     public void FreezeMovement()
     {
-        bm.enabled = false;
+        bm.running = false;
     }
 
 }

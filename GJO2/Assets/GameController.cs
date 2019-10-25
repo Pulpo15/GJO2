@@ -109,6 +109,7 @@ public class GameController : MonoBehaviour
                     players[i - 1].SetAsBird();
                 }
                 players[i - 1].scoreScript.running = true;
+                players[i - 1].UnfreezeMovement();
                 players[i - 1].scoreScript.NewRoundScoreSetup();
             } //Loops through players. And sets joystick 1 as the airplane in round 1, etc.
         }
@@ -132,6 +133,7 @@ public class GameController : MonoBehaviour
         for (int i = 0; i < players.Length; i++)
         {
             players[i].scoreScript.running = false;
+            players[i].FreezeMovement();
         }
         if (round == 6)
         {

@@ -8,6 +8,7 @@ public class BirdMovement : MonoBehaviour
     public float speed;
     Rigidbody rb;
     public bool controlOnKeyboard;
+    public bool running;
 
     void Start() {
         rb = GetComponent<Rigidbody>();
@@ -25,8 +26,20 @@ public class BirdMovement : MonoBehaviour
         //if direction up == 0,0,-90
         //if directiondown == 0,0,90
 
-        float x = Input.GetAxis(Horizontal);
-        float y = Input.GetAxis(Vertical);
+
+        float x;
+        float y;
+        if (controlOnKeyboard)
+        {
+            x = Input.GetAxis("Horizontal");
+            y = Input.GetAxis("Vertical");
+
+        }
+        else 
+        {
+            x = Input.GetAxis(Horizontal);
+            y = Input.GetAxis(Vertical);
+        }
 
         if (x != 0.0 || y != 0.0) {
             float angle = Mathf.Atan2(y, x) * Mathf.Rad2Deg;
@@ -36,14 +49,24 @@ public class BirdMovement : MonoBehaviour
         #endregion
 
         //Movement
+        float HorizontalMovement;
+        float VerticalMovement;
 
-        float HorizontalMovement = Input.GetAxis(Horizontal);
-        float VerticalMovement = Input.GetAxis(Vertical);
-        if (controlOnKeyboard)
+        if (controlOnKeyboard && running)
         {
             HorizontalMovement = Input.GetAxis("Horizontal");
             VerticalMovement = Input.GetAxis("Vertical");
 
+        }
+        else if (running)
+        {
+            HorizontalMovement = Input.GetAxis(Horizontal);
+            VerticalMovement = Input.GetAxis(Vertical);
+        }
+        else
+        {
+            HorizontalMovement = 0;
+            VerticalMovement = 0;
         }
 
         Player.velocity = new Vector3(HorizontalMovement * speed, Player.velocity.y);
