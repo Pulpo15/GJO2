@@ -7,7 +7,8 @@ public class BirdMovement : MonoBehaviour
     PlayerController.JoyStick js;
     public float speed;
     Rigidbody rb;
-    public bool controlOnKeyboard;
+    public bool controlOnKeyboard1;
+    public bool controlOnKeyboard2;
     public bool running;
 
     void Start() {
@@ -29,10 +30,16 @@ public class BirdMovement : MonoBehaviour
 
         float x;
         float y;
-        if (controlOnKeyboard)
+        if (controlOnKeyboard1)
         {
-            x = Input.GetAxis("Horizontal");
-            y = Input.GetAxis("Vertical");
+            x = Input.GetAxis("Horizontal1");
+            y = Input.GetAxis("Vertical1");
+
+        }
+        else if (controlOnKeyboard2)
+        {
+            x = Input.GetAxis("Horizontal2");
+            y = Input.GetAxis("Vertical2");
 
         }
         else 
@@ -52,10 +59,16 @@ public class BirdMovement : MonoBehaviour
         float HorizontalMovement;
         float VerticalMovement;
 
-        if (controlOnKeyboard && running)
+        if (controlOnKeyboard1 && running)
         {
-            HorizontalMovement = Input.GetAxis("Horizontal");
-            VerticalMovement = Input.GetAxis("Vertical");
+            HorizontalMovement = Input.GetAxis("Horizontal1");
+            VerticalMovement = Input.GetAxis("Vertical1");
+
+        }
+        else if (controlOnKeyboard2 && running)
+        {
+            HorizontalMovement = Input.GetAxis("Horizontal2");
+            VerticalMovement = Input.GetAxis("Vertical2");
 
         }
         else if (running)
