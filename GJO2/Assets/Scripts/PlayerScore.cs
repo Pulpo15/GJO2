@@ -55,7 +55,7 @@ public class PlayerScore : MonoBehaviour
     void FixedUpdate()
     {
         if (running)
-        {if(birdsKilled == 4)
+        {if(birdsKilled == 1)
             {
                 pc.gc.SkipRound();
             }

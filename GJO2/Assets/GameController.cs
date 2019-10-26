@@ -93,12 +93,12 @@ public class GameController : MonoBehaviour
         round++;
         roundUI.text = "Round: " + round.ToString();
 
-        if (round == 6)
+        if (round == 3)
         {
             StartCoroutine(EndRound());
             roundUI.gameObject.SetActive(false);
         }
-        else if (round == 7)
+        else if (round == 4)
         {
            SceneManager.LoadScene(gameOverScene);
         }
@@ -127,9 +127,9 @@ public class GameController : MonoBehaviour
     IEnumerator EndRound()
     {
 
-        if (round != 6)
+        if (round != 3)
         {
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < 2; i++)
             {
                 float b = players[i].scoreScript.roundBirdScore;
                 float a = players[i].scoreScript.roundScore;
@@ -143,11 +143,11 @@ public class GameController : MonoBehaviour
             players[i].scoreScript.running = false;
             players[i].FreezeMovement();
         }
-        if (round == 6 && gameEnded==false)
+        if (round == 3 && gameEnded==false)
         {
             gameEnded = true;
             yield return new WaitForSeconds(1f);
-            for (int i = 0; i < 5; i++)
+            for (int i = 0; i < 2; i++)
             {
                 players[i].scoreScript.NewRoundScoreSetup();
                 float a = players[i].scoreScript.totalScore;
@@ -156,7 +156,7 @@ public class GameController : MonoBehaviour
         }
         UIAnimator.Play("ScoreOpen");
         yield return new WaitForSeconds(2.5f);
-        if(round == 6)
+        if(round == 2)
         {
             aS.clip = victorySound;
             aS.Play();
