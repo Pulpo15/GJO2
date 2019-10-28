@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour
 
     [HideInInspector] public bool plane;
     public bool birdDead;
-    BirdMovement bm;
+    PlayerMovement bm;
     //BirdShoot bs;
     #region Graphics
     [Header("Graphics")]
@@ -39,7 +39,7 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
-        bm = GetComponent<BirdMovement>();
+        bm = GetComponent<PlayerMovement>();
         bm.SetJoyStick(playerJoyStick);
         gc = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameController>();
         scoreScript = GetComponent<PlayerScore>();

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BirdMovement : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
     PlayerController.JoyStick js;
     public float speed;
