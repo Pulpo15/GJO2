@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
     [Tooltip("Decides which joystick is connected to this player.")]
     public JoyStick playerJoyStick;
     #endregion
-
+    [Header("Attributes")]
     public Vector3 planeStartPos;
     public Vector3 birdStartPos;
 
